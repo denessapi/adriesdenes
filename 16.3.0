@@ -1,0 +1,10 @@
++ @emotion/styled@10.0.27
++ react@16.13.1
++ @emotion/core@10.0.27
+added 6 packages from 1 contributor, updated 2 packages and audited 974 packages in 31.852s
+
+43 packages are looking for funding
+  run `npm fund` for details
+
+found 5 low severity vulnerabilities
+  run `npm audit fix` to fix them, or `npm audit` for details

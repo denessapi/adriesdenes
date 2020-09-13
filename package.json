@@ -12,16 +12,32 @@
       "pre-commit": "pretty-quick --staged"
     }
   },
+  "babelMacros": {
+    "twin": {
+      "config": "tailwind.config.js",
+      "preset": "styled-components",
+      "debugProp": true,
+      "debugPlugins": false,
+      "debug": false
+    }
+  },
   "dependencies": {
-    "@fullhuman/postcss-purgecss": "^2.3.0",
     "autoprefixer": "^9.8.6",
+    "@emotion/core": "^10.0.27",
+    "@emotion/styled": "^10.0.27",
+    "@zeit/next-css": "^1.0.1",
     "next": "9.5.3",
     "postcss-import": "^12.0.1",
-    "react": "16.13.1",
+    "react": "^16.13.1",
     "react-dom": "16.13.1",
-    "tailwindcss": "^1.8.8"
+    "react-hamburger-menu": "^1.2.1",
+    "react-proptypes": "^1.0.0",
+    "styled-components": "^5.2.0",
+    "twin.macro": "^1.9.0",
+    "tailwindcss": "^1.8.9"
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.3.0",
     "babel-eslint": "^9.0.0",
     "eslint": "^6.1.0",
     "eslint-config-airbnb": "^18.0.0",
@@ -34,7 +50,7 @@
     "eslint-plugin-react": "^7.14.2",
     "eslint-plugin-react-hooks": "^1.4.0",
     "husky": "^4.3.0",
-    "prettier": "^1.16.4",
+    "prettier": "^1.19.1",
     "pretty-quick": "^3.0.2"
   }
 }

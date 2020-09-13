@@ -1,3 +1,22 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+/* purgecss start ignore */
+@tailwind base;
+/* purgecss end ignore */
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Cardo";
+  font-weight: 400;
+  src: url("/fonts/Cardo-Regular.ttf");
+}
+
+@font-face {
+  font-family: "MarckScript";
+  font-weight: 500;
+  src: url("/fonts/MarckScript-Regular.ttf");
+}
+
+html {
+  background-color: #f8f8f8;
+  font-size: 16px;
+}
