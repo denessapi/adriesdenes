@@ -5,18 +5,32 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Cardo";
-  font-weight: 400;
-  src: url("/fonts/Cardo-Regular.ttf");
+  font-family: "MarckScript";
+  src: url("/fonts/MarckScript-Regular.eot");
+  src: url("/fonts/MarckScript-Regular.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/MarckScript-Regular.otf") format("opentype"),
+    url("/fonts/MarckScript-Regular.svg") format("svg"),
+    url("/fonts/MarckScript-Regular.ttf") format("truetype"),
+    url("/fonts/MarckScript-Regular.woff") format("woff"),
+    url("/fonts/MarckScript-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "MarckScript";
-  font-weight: 500;
-  src: url("/fonts/MarckScript-Regular.ttf");
+  font-family: "Cardo";
+  src: url("/fonts/Cardo-Regular.eot");
+  src: url("/fonts/Cardo-Regular.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Cardo-Regular.otf") format("opentype"),
+    url("/fonts/Cardo-Regular.svg") format("svg"),
+    url("/fonts/Cardo-Regular.ttf") format("truetype"),
+    url("/fonts/Cardo-Regular.woff") format("woff"),
+    url("/fonts/Cardo-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 
 html {
-  background-color: #f8f8f8;
+  background-color: #f7fafc;
   font-size: 16px;
 }
