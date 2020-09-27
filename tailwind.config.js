@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ["./css/**/*.css", "./pages/**/*.js", "./components/**/*.jsx"],
+  purge: ["./pages/**/*.js", "./components/**/*.js"],
   future: {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true
@@ -10,6 +10,7 @@ module.exports = {
       marckscript: ["MarckScript"]
     },
     fontSize: {
+      "0": "0",
       xs: ".75rem",
       sm: ".875rem",
       base: "1rem",
@@ -24,5 +25,5 @@ module.exports = {
     extend: {}
   },
   variants: {},
-  plugins: []
+  plugins: [require("@tailwindcss/custom-forms")]
 };

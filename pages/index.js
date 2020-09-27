@@ -1,11 +1,12 @@
 import React from "react";
 
-import Head from "next/head";
-
 // Twin macro.
 import tw from "twin.macro";
 
 import Header from "../components/Header";
+import SEO from "../components/SEO";
+
+import Page from "../components/shared/Page";
 
 const Row = tw.div`
   pt-10
@@ -103,12 +104,8 @@ const Filler = tw.div`
 
 export default function Home() {
   return (
-    <div>
-      <Head>
-        <title>Adri & Dénes - 2021. június 5.</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
+    <Page>
+      <SEO title="Adri & Dénes - 2021. június 5." />
       <main>
         <Header />
         <div>
@@ -171,6 +168,6 @@ export default function Home() {
           <img src="index_footer.png" alt="Footer" />
         </div>
       </main>
-    </div>
+    </Page>
   );
 }

@@ -1,58 +1,21 @@
 import React from "react";
 import Head from "next/head";
 
-// Twin macro.
-import tw from "twin.macro";
-import styled from "@emotion/styled";
-
 import Header from "../components/Header";
+import SEO from "../components/SEO";
+import ImageDivider from "../components/ImageDivider";
 
-const Story = tw.div`
-  lg:text-xl
-  md:text-lg
-  text-lg
-  pt-6
-  pb-8
-  text-justify
-  container mx-auto
-  lg:w-2/3
-  md:w-2/3
-  px-10
-  font-cardo
-`;
-
-const LargeText = tw.div`
-  lg:text-6xl
-  md:text-5xl
-  text-4xl
-  text-center
-  font-marckscript
-  pb-4
-  md:pb-8
-  lg:pb-12
-`;
-
-const Row = tw.div`
-  w-full
-`;
-
-const Img = tw.img`
-  h-16
-  w-full
-`;
+import Page from "../components/shared/Page";
+import LargeText from "../components/shared/LargeText";
+import Story from "../components/shared/Story";
 
 export default function Gyik() {
   return (
-    <div>
-      <Head>
-        <title>Hasznos információk</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <Page>
+      <SEO title="Hasznos információk" />
       <main>
         <Header />
-        <Row>
-          <Img src="image_footer.png" alt="Footer" />
-        </Row>
+        <ImageDivider />
         <LargeText>Hasznos információk</LargeText>
         <Story>
           Mind a szertartás és a vacsora és azt követő buli is a Városliget Café
@@ -82,10 +45,8 @@ export default function Gyik() {
           <a href="mailto:eskuvo@adriesdenes.hu">eskuvo@adriesdenes.hu</a> email
           címre.
         </Story>
-        <Row>
-          <Img src="image_footer.png" alt="Footer" />
-        </Row>
+        <ImageDivider />
       </main>
-    </div>
+    </Page>
   );
 }

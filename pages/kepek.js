@@ -1,15 +1,13 @@
 import React, { useState, useCallback } from "react";
 
-import Head from "next/head";
-
-// Twin macro.
-import tw from "twin.macro";
-
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 
 import Header from "../components/Header";
+import SEO from "../components/SEO";
+
 import Container from "../components/shared/Container";
+import Page from "../components/shared/Page";
 
 const Images = [
   {
@@ -92,11 +90,8 @@ export default function Kepek() {
   };
 
   return (
-    <div>
-      <Head>
-        <title>Képek</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <Page>
+      <SEO title="Képek" />
       <Header />
       <Container>
         <Gallery photos={Images} onClick={openLightbox} />
@@ -115,6 +110,6 @@ export default function Kepek() {
           ) : null}
         </ModalGateway>
       </Container>
-    </div>
+    </Page>
   );
 }

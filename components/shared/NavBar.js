@@ -8,12 +8,8 @@ const NavItem = tw.div`
   text-base md:text-base lg:text-xl
 `;
 
-const NavBarContainer = tw.div`
-  hidden md:flex md:flex-row md:justify-end
-`;
-
 const NavBar = () => {
-  const content = (
+  return (
     <>
       <NavLink link="/">
         <NavItem>Nyitólap</NavItem>
@@ -35,8 +31,6 @@ const NavBar = () => {
       </NavLink>
     </>
   );
-
-  return <NavBarContainer>{content}</NavBarContainer>;
 };
 
 export default NavBar;

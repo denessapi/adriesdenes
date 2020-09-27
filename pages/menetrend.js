@@ -1,36 +1,15 @@
 import React from "react";
-import Head from "next/head";
 
 // Twin macro.
 import tw from "twin.macro";
-import styled from "@emotion/styled";
 
 import Header from "../components/Header";
+import SEO from "../components/SEO";
+import ImageDivider from "../components/ImageDivider";
 
-const Story = tw.div`
-  lg:text-2xl
-  md:text-xl
-  text-lg
-  pt-6
-  pb-20
-  text-justify
-  container mx-auto
-  lg:w-2/3
-  md:w-2/3
-  px-10
-  font-cardo
-`;
-
-const LargeText = tw.div`
-  lg:text-6xl
-  md:text-5xl
-  text-4xl
-  text-center
-  font-marckscript
-  pb-4
-  md:pb-8
-  lg:pb-12
-`;
+import Page from "../components/shared/Page";
+import LargeText from "../components/shared/LargeText";
+import Story from "../components/shared/Story";
 
 const TimeTable = tw.div`
   pb-2
@@ -49,47 +28,29 @@ const TimeTable = tw.div`
   mx-auto
 `;
 
-const Time = styled.div`
-  ${tw`
-    text-right
-    pr-4
-    md:pr-6
-    lg:pr-8
-    w-1/3
-  `}
+const Time = tw.div`
+  text-right
+  pr-4
+  md:pr-6
+  lg:pr-8
+  w-1/3
 `;
 
-const Event = styled.div`
-  ${tw`
+const Event = tw.div`
   text-left
   pl-4
   md:pl-6
   lg:pl-8
   w-2/3
-`}
-`;
-
-const Row = tw.div`
-  w-full
-`;
-
-const Img = tw.img`
-  h-16
-  w-full
 `;
 
 export default function Menetrend() {
   return (
-    <div>
-      <Head>
-        <title>Menetrend</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <Page>
+      <SEO title="Menetrend" />
       <main>
         <Header />
-        <Row>
-          <Img src="image_footer.png" alt="Footer" />
-        </Row>
+        <ImageDivider />
 
         <LargeText>Menetrend</LargeText>
         <Story>
@@ -129,10 +90,8 @@ export default function Menetrend() {
           <Time>0:30-</Time>
           <Event>Buli</Event>
         </TimeTable>
-        <Row>
-          <Img src="image_footer.png" alt="Footer" />
-        </Row>
+        <ImageDivider />
       </main>
-    </div>
+    </Page>
   );
 }

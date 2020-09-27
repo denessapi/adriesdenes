@@ -1,5 +1,4 @@
 import React from "react";
-import Head from "next/head";
 
 import GoogleMapReact from "google-map-react";
 
@@ -8,18 +7,14 @@ import tw from "twin.macro";
 import styled from "@emotion/styled";
 
 import Header from "../components/Header";
+import ImageDivider from "../components/ImageDivider";
+import SEO from "../components/SEO";
 
-const Story = tw.div`
-  text-lg
-  pt-6
-  pb-20
-  text-justify
-  container mx-auto
-  lg:w-1/2
-  md:w-2/3
-  px-10
-  font-cardo
-`;
+import Page from "../components/shared/LargeText";
+import LargeText from "../components/shared/LargeText";
+import MediumText from "../components/shared/MediumText";
+import SmallText from "../components/shared/SmallText";
+import Story from "../components/shared/Story";
 
 const Map = styled.div`
   ${tw`
@@ -32,47 +27,6 @@ const Map = styled.div`
   height: 420px
 `;
 
-const LargeText = tw.div`
-  text-center
-  lg:text-6xl
-  md:text-5xl
-  text-4xl
-  font-marckscript
-  pb-4
-  md:pb-8
-  lg:pb-12
-`;
-
-const MediumText = tw.div`
-  text-center
-  lg:text-5xl
-  md:text-4xl
-  text-3xl
-  font-marckscript
-  pb-2
-  md:pb-4
-  lg:pb-6
-`;
-
-const SmallText = tw.div`
-  text-center
-  lg:text-4xl
-  md:text-3xl
-  text-2xl
-  font-marckscript
-  pb-2
-  md:pb-4
-  lg:pb-6
-`;
-const Row = tw.div`
-  w-full
-`;
-
-const Img = tw.img`
-  h-16
-  w-full
-`;
-
 const Marker = styled.img`
   ${tw`
     h-16
@@ -82,16 +36,11 @@ const Marker = styled.img`
 
 export default function Helyszin() {
   return (
-    <div>
-      <Head>
-        <title>Helyszín</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <Page>
+      <SEO title="Helyszín" />
       <main>
         <Header />
-        <Row>
-          <Img src="image_footer.png" alt="Footer" />
-        </Row>
+        <ImageDivider />
 
         <LargeText>Helyszín</LargeText>
         <MediumText>Városliget Café és terasz</MediumText>
@@ -114,10 +63,8 @@ export default function Helyszin() {
           további parkolóhelyek a Városligetben a Konrad-Adenauer úton
           találhatóak pár perc sétára az étteremtől.
         </Story>
-        <Row>
-          <Img src="image_footer.png" alt="Footer" />
-        </Row>
+        <ImageDivider />
       </main>
-    </div>
+    </Page>
   );
 }
