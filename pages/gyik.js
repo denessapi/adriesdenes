@@ -18,8 +18,8 @@ export default function Gyik() {
         <ImageDivider />
         <LargeText>Hasznos információk</LargeText>
         <Story>
-          Mind a szertartás és a vacsora és azt követő buli is a Városliget Café
-          teraszán és éttermében lesz megtartva.
+          Mind a szertartás, mind a vacsora és azt követő buli is a Városliget
+          Café teraszán és éttermében lesz megtartva.
         </Story>
         <Story>
           A meghívás természetesen vonatkozik mindenkire, akit szeretnél
@@ -29,9 +29,9 @@ export default function Gyik() {
         <Story>
           Az esküvő 100% kutyabarát. Légyszi a válaszodban add meg, hogy őt is
           hozod, hogy tudjunk elegendő kutyaszitterrel készülni. Mind a
-          teraszra, mind az étterembe bejöhetnek majd a kutyák, de a vacsora
-          alatt azt javasoljuk, hogy a teraszon tartózkodjanak, hogy mindenki
-          önfeledten élvezhesse a vacsorát.
+          teraszra, mind az étterembe bejöhetnek majd a kutyák. A vacsora és a
+          buli alatt is lesz számukra opcionális felügyeleta a SciDog jóvoltából
+          az esküvő forgatagától távolabb.
         </Story>
         <Story>
           Az étkezések során készülünk glutén- és laktózmentes opciókkal. De

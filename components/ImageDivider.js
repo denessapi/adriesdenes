@@ -14,7 +14,7 @@ const Img = tw.img`
 const ImageDivider = title => {
   return (
     <Row>
-      <Img src="image_footer.png" alt="Footer" />
+      <Img src="/image_footer.png" alt="Footer" />
     </Row>
   );
 };

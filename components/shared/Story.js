@@ -9,7 +9,7 @@ const Story = tw.div`
   text-justify
   container mx-auto
   lg:w-2/3
-  md:w-2/3
+  md:w-3/4
   px-10
   font-cardo
 `;

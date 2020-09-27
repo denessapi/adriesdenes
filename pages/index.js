@@ -55,8 +55,8 @@ const Story = tw.div`
   pb-20
   text-justify
   container mx-auto
-  lg:w-1/2
-  md:w-2/3
+  lg:w-2/3
+  md:w-3/4
   px-10
   font-cardo
 `;

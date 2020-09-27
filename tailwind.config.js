@@ -22,6 +22,31 @@ module.exports = {
       "5xl": "3rem",
       "6xl": "4rem"
     },
+    customForms: theme => ({
+      default: {
+        input: {
+          borderRadius: theme("borderRadius.lg")
+        },
+        select: {
+          borderRadius: theme("borderRadius.lg"),
+          boxShadow: theme("boxShadow.default")
+        },
+        checkbox: {
+          backgroundColor: theme("colors.white"),
+          width: theme("spacing.6"),
+          height: theme("spacing.6"),
+          borderWidth: "1px",
+          borderColor: theme("colors.gray.400")
+        },
+        radio: {
+          backgroundColor: theme("colors.white"),
+          width: theme("spacing.6"),
+          height: theme("spacing.6"),
+          borderWidth: "1px",
+          borderColor: theme("colors.gray.400")
+        }
+      }
+    }),
     extend: {}
   },
   variants: {},
