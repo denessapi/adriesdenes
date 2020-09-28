@@ -34,6 +34,9 @@ const Marker = styled.img`
   transform: translate(-50%, -100%);
 `;
 
+const parking = require("../images/parking.png");
+const restaurant = require("../images/restaurant.png");
+
 export default function Helyszin() {
   return (
     <Page>
@@ -53,9 +56,24 @@ export default function Helyszin() {
             defaultCenter={{ lat: 47.515503, lng: 19.080133 }}
             defaultZoom={17}
           >
-            <Marker lat={47.514503} lng={19.080133} src="restaurant.png" />
-            <Marker lat={47.516797} lng={19.082977} src="parking.png" />
-            <Marker lat={47.514365} lng={19.07934} src="parking.png" />
+            <Marker
+              lat={47.514503}
+              lng={19.080133}
+              src={restaurant.src}
+              srcSet={restaurant.srcSet}
+            />
+            <Marker
+              lat={47.516797}
+              lng={19.082977}
+              src={parking.src}
+              srcSet={parking.srcSet}
+            />
+            <Marker
+              lat={47.514365}
+              lng={19.07934}
+              src={parking.src}
+              srcSet={parking.srcSet}
+            />
           </GoogleMapReact>
         </Map>
         <Story>

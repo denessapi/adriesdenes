@@ -11,10 +11,17 @@ const Img = tw.img`
   my-4
 `;
 
+const divider = require("../images/image_divider.png");
+
 const ImageDivider = title => {
   return (
     <Row>
-      <Img src="/image_footer.png" alt="Footer" />
+      <Img
+        src={divider.src}
+        srcSet={divider.srcSet}
+        height={divider.height}
+        alt="Footer"
+      />
     </Row>
   );
 };

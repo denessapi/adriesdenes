@@ -9,66 +9,77 @@ import SEO from "../components/SEO";
 import Container from "../components/shared/Container";
 import Page from "../components/shared/Page";
 
+const img1 = require("../images/1.jpg");
+const img2 = require("../images/2.jpg");
+const img3 = require("../images/3.jpg");
+const img4 = require("../images/4.jpg");
+const img5 = require("../images/5.jpg");
+const img6 = require("../images/6.jpg");
+const img7 = require("../images/7.jpg");
+const img8 = require("../images/8.jpg");
+const img9 = require("../images/9.jpg");
+
 const Images = [
   {
-    large: "/pictures/1.jpg",
-    src: "/pictures/thumbnails/1.jpg",
+    src: img1.src,
+    srcSet: img1.srcSet,
+    imgHeight: img1.height,
     width: 4,
     height: 3,
     caption: "Tátrában a jégen csúszva  "
   },
   {
-    large: "/pictures/2.jpg",
-    src: "/pictures/thumbnails/2.jpg",
+    src: img2.src,
+    srcSet: img2.srcSet,
     width: 4,
     height: 3,
     caption: "Az első közös szelfink"
   },
   {
-    large: "/pictures/3.jpg",
-    src: "/pictures/thumbnails/3.jpg",
+    src: img3.src,
+    srcSet: img3.srcSet,
     width: 4,
     height: 3,
     caption: "Eilat - Dénes itt még nem tanulta meg hogy kell mosolyogni"
   },
   {
-    large: "/pictures/4.jpg",
-    src: "/pictures/thumbnails/4.jpg",
+    src: img4.src,
+    srcSet: img4.srcSet,
     width: 5,
     height: 3,
     caption: "Eilat - Delfines búvárkodás előtt"
   },
   {
-    large: "/pictures/5.jpg",
-    src: "/pictures/thumbnails/5.jpg",
+    src: img5.src,
+    srcSet: img5.srcSet,
     width: 4,
     height: 3,
     caption: "Holt-tenger"
   },
   {
-    large: "/pictures/6.jpg",
-    src: "/pictures/thumbnails/6.jpg",
+    src: img6.src,
+    srcSet: img6.srcSet,
     width: 4,
     height: 3,
     caption: "Családi szelfi Dusterrel (itt se)"
   },
   {
-    large: "/pictures/7.jpg",
-    src: "/pictures/thumbnails/7.jpg",
+    src: img7.src,
+    srcSet: img7.srcSet,
     width: 4,
     height: 3,
     caption: "Kevélyhegyi levendulás (itt már alakul)"
   },
   {
-    large: "/pictures/8.jpg",
-    src: "/pictures/thumbnails/8.jpg",
+    src: img8.src,
+    srcSet: img8.srcSet,
     width: 4,
     height: 3,
     caption: "Balatonboglár"
   },
   {
-    large: "/pictures/9.jpg",
-    src: "/pictures/thumbnails/9.jpg",
+    src: img9.src,
+    srcSet: img9.srcSet,
     width: 4,
     height: 3,
     caption: "Balatonföldvár"
@@ -101,9 +112,7 @@ export default function Kepek() {
               <Carousel
                 currentIndex={currentImage}
                 views={Images.map(x => ({
-                  ...x,
-                  src: x.large,
-                  srcset: x.srcSet
+                  ...x
                 }))}
               />
             </Modal>

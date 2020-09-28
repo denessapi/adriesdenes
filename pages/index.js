@@ -102,6 +102,12 @@ const Filler = tw.div`
   lg:w-1/4
 `;
 
+const header = require("../images/index_header.png");
+const footer = require("../images/index_footer.png");
+const unicorn = require("../images/unicorn_left.png");
+const cloud = require("../images/cloud_right.png");
+const divider = require("../images/image_divider.png");
+
 export default function Home() {
   return (
     <Page>
@@ -109,11 +115,21 @@ export default function Home() {
       <main>
         <Header />
         <div>
-          <img src="index_header.png" alt="Header" />
+          <img
+            src={header.src}
+            srcSet={header.srcSet}
+            height={header.height}
+            alt="Header"
+          />
         </div>
         <TallRow>
           <ImgBlock>
-            <img src="unicorn_left.png" alt="Unicorn" />
+            <img
+              src={unicorn.src}
+              srcSet={unicorn.srcSet}
+              height={unicorn.height}
+              alt="Unicorn"
+            />
           </ImgBlock>
           <ContentBlock>
             <LargeText>Krauszman Adrienn</LargeText>
@@ -136,11 +152,21 @@ export default function Home() {
             <LargeText>2021. június 5.</LargeText>
           </ContentBlock>
           <ImgBlock>
-            <img src="cloud_right.png" alt="Header" />
+            <img
+              src={cloud.src}
+              srcSet={cloud.srcSet}
+              height={cloud.height}
+              alt="Cloud"
+            />
           </ImgBlock>
         </TallRowReverse>
         <Row>
-          <img src="image_footer.png" alt="Footer" />
+          <img
+            src={divider.src}
+            srcSet={divider.srcSet}
+            height={divider.height}
+            alt="Divider"
+          />
         </Row>
         <Row>
           <LargeText>Történetünk</LargeText>
@@ -165,7 +191,12 @@ export default function Home() {
           </Story>
         </Row>
         <div>
-          <img src="index_footer.png" alt="Footer" />
+          <img
+            src={footer.src}
+            srcSet={footer.srcSet}
+            height={footer.height}
+            alt="Footer"
+          />
         </div>
       </main>
     </Page>
