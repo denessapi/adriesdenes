@@ -1,4 +1,7 @@
 import React, { useEffect } from "react";
+import { useRouter } from "next/router";
+
+import lscache from "lscache";
 
 import Header from "../../components/Header";
 import SEO from "../../components/SEO";
@@ -9,7 +12,13 @@ import LargeText from "../../components/shared/LargeText";
 import Story from "../../components/shared/Story";
 
 export default function Gyik() {
+  const router = useRouter();
   const [isComing, setIsComing] = React.useState(false);
+
+  const rsvpCode = lscache.get("rsvpCode");
+  if (rsvpCode !== null) {
+    router.push(`/rsvp/${rsvpCode}`);
+  }
 
   return (
     <Page>

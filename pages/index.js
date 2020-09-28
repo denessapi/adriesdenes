@@ -177,7 +177,7 @@ export default function Home() {
             </Paragraph>
             <Paragraph>
               A kezdeti bizonytalanságok után novemberben fordult komolyra a
-              kapcsolatunk. 2020 januári öszeköltözésünket követően kettőnk és
+              kapcsolatunk. 2020 januári összeköltözésünket követően kettőnk és
               hármunk kapcsolata is tovább mélyült. Két ideiglenes kutyánk
               (Floppy és Duster) mindannyiunk jellemén fejlesztett és láthattuk,
               hogy egy új családtag érkezésekor jól tudunk együttműködni.

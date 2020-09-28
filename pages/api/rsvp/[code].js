@@ -13,7 +13,6 @@ export default (req, res) => {
         let value = object[key];
         value.key = key;
         value.isValid = true;
-        console.log(1);
         res.status(200).json(value);
       } else {
         res.status(200).json({ key: null });

@@ -2,6 +2,7 @@ import React from "react";
 // Twin macro.
 import tw from "twin.macro";
 import produce from "immer";
+import lscache from "lscache";
 
 import { useRouter } from "next/router";
 
@@ -106,7 +107,10 @@ function reducer(state, action) {
     case "server":
       return produce(state, draft => {
         draft.key = action.value.key;
-        draft.state = action.value.key === null ? "invalid" : "valid";
+        draft.state =
+          action.value.key === null || action.value.key === undefined
+            ? "invalid"
+            : "valid";
         Object.keys(action.value).forEach(key => {
           draft.data[key] = action.value[key];
         });
@@ -150,6 +154,15 @@ export default function Gyik() {
       fetchData();
     }
   }, [code, state.state]);
+
+  React.useEffect(
+    function saveStateToLocalStorage() {
+      if (state.state === "valid") {
+        lscache.set("rsvpCode", code);
+      }
+    },
+    [state.state]
+  );
 
   const handleSave = () => {
     fetch(`/api/rsvp/update`, {
