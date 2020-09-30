@@ -2,11 +2,24 @@ import React from "react";
 
 // Twin macro.
 import tw from "twin.macro";
+import Img from "react-optimized-image";
 
 import Header from "../components/Header";
 import SEO from "../components/SEO";
 
 import Page from "../components/shared/Page";
+import LazyImage from "../components/LazyImage";
+
+import IndexHeader from "../images/index_header.png";
+import IndexHeaderLqip from "../images/index_header.png?lqip";
+import Unicorn from "../images/unicorn_left.png";
+import UnicornLqip from "../images/unicorn_left.png?lqip";
+import Cloud from "../images/cloud_right.png";
+import CloudLqip from "../images/cloud_right.png?lqip";
+import Divider from "../images/image_divider.png";
+import DividerLqip from "../images/image_divider.png?lqip";
+import IndexFooter from "../images/index_footer.png";
+import IndexFooterLqip from "../images/index_footer.png?lqip";
 
 const Row = tw.div`
   pt-10
@@ -61,7 +74,7 @@ const Story = tw.div`
   font-cardo
 `;
 
-const Divider = tw.div`
+const DividerBlock = tw.div`
   my-4
   md:my-6
   lg:my-8
@@ -102,12 +115,6 @@ const Filler = tw.div`
   lg:w-1/4
 `;
 
-const header = require("../images/index_header.png");
-const footer = require("../images/index_footer.png");
-const unicorn = require("../images/unicorn_left.png");
-const cloud = require("../images/cloud_right.png");
-const divider = require("../images/image_divider.png");
-
 export default function Home() {
   return (
     <Page>
@@ -115,21 +122,23 @@ export default function Home() {
       <main>
         <Header />
         <div>
-          <img
-            src={header.src}
-            srcSet={header.srcSet}
-            height={header.height}
+          <LazyImage
+            aspectRatio={IndexHeader.width / IndexHeader.height}
             alt="Header"
-          />
+          >
+            <Img src={IndexHeaderLqip} />
+            <Img src={IndexHeader} />
+          </LazyImage>
         </div>
         <TallRow>
           <ImgBlock>
-            <img
-              src={unicorn.src}
-              srcSet={unicorn.srcSet}
-              height={unicorn.height}
+            <LazyImage
+              aspectRatio={Unicorn.width / Unicorn.height}
               alt="Unicorn"
-            />
+            >
+              <Img src={UnicornLqip} />
+              <Img src={Unicorn} />
+            </LazyImage>
           </ImgBlock>
           <ContentBlock>
             <LargeText>Krauszman Adrienn</LargeText>
@@ -147,26 +156,22 @@ export default function Home() {
               <br />
               Városliget Café
             </LargeText>
-            <Divider />
+            <DividerBlock />
             <SmallText>időpont</SmallText>
             <LargeText>2021. június 5.</LargeText>
           </ContentBlock>
           <ImgBlock>
-            <img
-              src={cloud.src}
-              srcSet={cloud.srcSet}
-              height={cloud.height}
-              alt="Cloud"
-            />
+            <LazyImage alt="Cloud" aspectRatio={Cloud.width / Cloud.height}>
+              <Img src={CloudLqip} />
+              <Img src={Cloud} />
+            </LazyImage>
           </ImgBlock>
         </TallRowReverse>
         <Row>
-          <img
-            src={divider.src}
-            srcSet={divider.srcSet}
-            height={divider.height}
-            alt="Divider"
-          />
+          <LazyImage aspectRatio={Divider.width / Divider.height} alt="Divider">
+            <Img src={DividerLqip} />
+            <Img src={Divider} />
+          </LazyImage>
         </Row>
         <Row>
           <LargeText>Történetünk</LargeText>
@@ -191,12 +196,13 @@ export default function Home() {
           </Story>
         </Row>
         <div>
-          <img
-            src={footer.src}
-            srcSet={footer.srcSet}
-            height={footer.height}
+          <LazyImage
+            aspectRatio={IndexFooter.width / IndexFooter.height}
             alt="Footer"
-          />
+          >
+            <Img src={IndexFooterLqip} />
+            <Img src={IndexFooter} />
+          </LazyImage>
         </div>
       </main>
     </Page>

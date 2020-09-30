@@ -1,6 +1,7 @@
 import React from "react";
 
 import GoogleMapReact from "google-map-react";
+import Img from "react-optimized-image";
 
 // Twin macro.
 import tw from "twin.macro";
@@ -16,6 +17,9 @@ import MediumText from "../components/shared/MediumText";
 import SmallText from "../components/shared/SmallText";
 import Story from "../components/shared/Story";
 
+import Parking from "../images/parking.png";
+import Restaurant from "../images/restaurant.png";
+
 const Map = styled.div`
   ${tw`
     mx-auto
@@ -27,7 +31,7 @@ const Map = styled.div`
   height: 420px
 `;
 
-const Marker = styled.img`
+const Marker = styled(Img)`
   ${tw`
     h-16
   `}
@@ -56,24 +60,9 @@ export default function Helyszin() {
             defaultCenter={{ lat: 47.515503, lng: 19.080133 }}
             defaultZoom={17}
           >
-            <Marker
-              lat={47.514503}
-              lng={19.080133}
-              src={restaurant.src}
-              srcSet={restaurant.srcSet}
-            />
-            <Marker
-              lat={47.516797}
-              lng={19.082977}
-              src={parking.src}
-              srcSet={parking.srcSet}
-            />
-            <Marker
-              lat={47.514365}
-              lng={19.07934}
-              src={parking.src}
-              srcSet={parking.srcSet}
-            />
+            <Marker lat={47.514503} lng={19.080133} src={Restaurant} />
+            <Marker lat={47.516797} lng={19.082977} src={Parking} />
+            <Marker lat={47.514365} lng={19.07934} src={Parking} />
           </GoogleMapReact>
         </Map>
         <Story>

@@ -1,6 +1,7 @@
 {
   "presets": ["next/babel"],
   "plugins": [
+    "react-optimized-image/plugin",
     "babel-plugin-macros",
     [
       "styled-components",
