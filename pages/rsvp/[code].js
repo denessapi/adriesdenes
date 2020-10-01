@@ -478,7 +478,7 @@ export default function Gyik() {
                       })
                     }
                   />
-                  <Label for="dog">Szeretnék papír alapú meghívót is</Label>
+                  <Label for="invite">Szeretnék papír alapú meghívót is</Label>
                 </label>
               </TextareRow>
               {state.data.invite && (
