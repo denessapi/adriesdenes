@@ -141,7 +141,7 @@ export default function Home() {
             </LazyImage>
           </ImgBlock>
           <ContentBlock>
-            <LargeText>Krauszman Adrienn</LargeText>
+            <LargeText>Dr. Krauszman Adrienn</LargeText>
             <SmallText>és</SmallText>
             <LargeText>Sápi Dénes</LargeText>
           </ContentBlock>

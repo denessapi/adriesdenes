@@ -11,7 +11,7 @@ const SEO = props => {
       <link rel="icon" href="/favicon.ico" />
       <meta
         name="Description"
-        content="Krauszman Adrienn és Sápi Dénes esküvői honlapja,
+        content="Dr. Krauszman Adrienn és Sápi Dénes esküvői honlapja,
         időpont: 2021. június 5.
         helyszín: Városliget Café, Budapest"
       ></meta>
