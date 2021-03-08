@@ -223,16 +223,15 @@ export default function Gyik() {
         {state.state === "valid" && (
           <>
             <Story>
-              Kedves {state.data.nickName}, kérjük minél hamarabb, legkésőbb
-              2020. október 31-ig adj számunkra egy előzetes visszajelezést,
-              hogy ott leszel-e a nagy napon. Ha a későbbiekben másképp
-              alakulnak a dolgok, akkor természetesen lesz még lehetőséged
-              módosítani rajta. Válaszodat 2021. április 30-ig véglegesítsd!
+              Kedves {state.data.nickName}, kérjük minél hamarabb jelezz vissza
+              számunkra, hogy ott leszel-e a nagy napon. Ha a későbbiekben
+              másképp alakulnak a dolgok, akkor természetesen lesz még
+              lehetőséged módosítani rajta. Válaszodat 2021. április 30-ig
+              véglegesítsd!
             </Story>
             <FormContainer>
               <CenteredRow>
                 <SmallHeader>Ott leszel?</SmallHeader>
-
                 <div class="my-2">
                   <input
                     type="radio"

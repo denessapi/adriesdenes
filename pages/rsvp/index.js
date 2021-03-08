@@ -28,11 +28,10 @@ export default function Gyik() {
         <ImageDivider />
         <LargeText>RSVP</LargeText>
         <Story>
-          Kérjük minél hamarabb, legkésőbb 2020. október 31-ig adj számunkra egy
-          előzetes visszajelezést, hogy ott leszel-e a nagy napon. Ha a
-          későbbiekben másképp alakulnak a dolgok, akkor természetesen lesz még
-          lehetőséged módosítani rajta. Válaszodat 2021. április 30-ig
-          véglegesítsd!
+          Kérjük minél hamarabb jelezz vissza számunkra, hogy ott leszel-e a
+          nagy napon. Ha a későbbiekben másképp alakulnak a dolgok, akkor
+          természetesen lesz még lehetőséged módosítani rajta. Válaszodat 2021.
+          április 30-ig véglegesítsd!
         </Story>
         <Story>
           Visszajelezni a meghívóban kapott link segíségével tudsz. Bármilyen
