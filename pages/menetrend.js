@@ -72,6 +72,10 @@ export default function Menetrend() {
         </TimeTable>
         <TimeTable>
           <Time>19:00</Time>
+          <Event>Ajándékozás</Event>
+        </TimeTable>
+        <TimeTable>
+          <Time>19:30</Time>
           <Event>Vacsora</Event>
         </TimeTable>
         <TimeTable>
@@ -79,7 +83,7 @@ export default function Menetrend() {
           <Event>Nyitótánc, buli</Event>
         </TimeTable>
         <TimeTable>
-          <Time>23:00</Time>
+          <Time>22:00</Time>
           <Event>Torta</Event>
         </TimeTable>
         <TimeTable>
